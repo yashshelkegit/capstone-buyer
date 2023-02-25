@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Filter Project</title>
+</head>
+<body>
+    <article class="parent">
+        <section class="sidebar">
+            <div class="search">
+                <input type="search" size="40" placeholder="Search...">
+            </div>
+            <ul class="lists">
+                <li class="list" data-id="all">ALL</li>
+                <li class="list" data-id="mumbai">Rooms</li>
+                <li class="list" data-id="delhi">Farms</li>
+                <li class="list" data-id="jalgaon">Flats</li>
+                <li class="list" data-id="pune">Land area</li>
+            </ul><br>
+            <label class="range-lbl" for="range">Select Range :</label>
+            <input type="range" class="range" name="range" value="100" step="5">
+            <p>Max :<span class="range-otp"></span></p>
+        </section>
+        <section class="main-content">
+            <!-- <div class="product">
+                <img src="img.jpg" alt="name "><br>
+                <span class="name">name 1</span><br>
+                <span class="price">6000</span>
+            </div>
+            <div class="product">
+                <img src="" alt="name"><br>
+                <span class="name">name 1</span><br>
+                <span class="price">6000</span>
+            </div> -->
+            
+        </section>
+        <div class="modal">
+            <h1><button class="modal-cross">&#9587;</button></h1>
+            <div class="modal-content">
+                <div class="modal-section">
+                    <img src="./temp/sofa3.jpg" alt="" srcset="" class="modal-img">
+                </div>
+                <div class="modal-section">
+                    <h2 class="modal-name">Name</h2>
+                    <p class="modal-price">Rs. 4509</p>
+                    <p class="modal-desc">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <button class="modal-contact-btn" data-contact="yash@gmail.com">Contact</button>
+
+                </div>
+            </div>
+        </div>
+    </article>
+    
+</body>
+</html>
