@@ -298,3 +298,35 @@ document.querySelector(".modal-cross").addEventListener("click", (e) => {
 modal_contact.addEventListener("click", (e) => {
 	console.log(e.target.dataset.contact);
 });
+
+
+//Adding property 
+
+const plus = document.querySelector(".add-plus");
+const nav_btn = document.querySelector(".nav-btn");
+const parent = document.querySelector(".parent");
+const add_parent = document.querySelector(".add-parent");
+
+// parent.style.display = "flex"
+//closures can be used here
+// plus.addEventListener('click', (e)=>{
+// 	nav_btn.textContent = "buy";
+// 	e.target.textContent === "sell"
+// 	add_parent.style.display = "block"
+
+
+// })
+
+nav_btn.addEventListener('click', (e)=>{
+	console.log(e.target.textContent)
+	if(e.target.textContent === "buy"){
+		parent.style.display = "flex";
+		add_parent.style.display = "none";
+		// e.target.textContent === "buy";
+	}
+	if(e.target.textContent === "sell"){
+		parent.style.display = "none";
+		add_parent.style.display = "block";
+	}
+	e.target.textContent = (parent.style.display === "none") ? "buy" : "sell";
+})
