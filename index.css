@@ -110,12 +110,12 @@ body{
 }
 .add-plus{
     position: absolute;
-    font-size: 3rem;
+    font-size: 2.1rem;
+    padding: 1.1rem;
     background: rgb(63, 57, 63);
     color: white;
     text-align: center;
     border-radius: 50%;
-    width: 3.5rem;
     cursor: pointer;
     right: 5%;
     bottom: 10%;
@@ -187,5 +187,61 @@ body{
 }
 .add-parent{
     border: 1px solid red;
+    /* padding: 1rem; */
+    display: none;
+}
+.form{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
     padding: 1rem;
+}
+.main-form{
+    /* border: 1px solid blue; */
+    padding: 1rem;
+    box-shadow: 5px 5px 15px gray;
+}
+.inp{
+    /* border: 1px solid yellow; */
+    margin-bottom: 20px;
+    padding: 5px;
+    transition: .4s;
+}
+.inp:hover{
+    box-shadow: 5px 5px 15px gray;
+}
+.select{
+    width: 30rem;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(61, 61, 61);
+}
+.main-form label{
+    color: rgb(66, 66, 66);
+    /* border: 1px solid red; */
+    width: 30rem;
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
+.main-form input{
+    display: block;
+    width: 30rem;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(61, 61, 61);
+    background: transparent;
+}
+
+.acc{
+    margin-bottom: 2rem;
+}
+
+.add-btn .btn{
+    border: none;
+    background: rgb(68, 68, 68);
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Filter Project</title>
 </head>
 <body>
@@ -64,43 +65,67 @@
                         recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                     <button class="modal-contact-btn" data-contact="yash@gmail.com">Contact</button>
-
+                    <button class="modal-contact-btn" data-cart="">Add to Cart</button>
+                    
                 </div>
             </div>
         </div>
-        <div class="add-plus">+</div>
+        <div class="add-plus"><i class="fa fa-shopping-cart"></i></div>
     </article>
 
     <article class="add-parent">
+        
         <div class="form">
-            <form action="">
-                <div class="name">
+            <section class="sidebar">
+                <div class="acc">
+                    <h2>Account name</h2>
+                </div>
+                <div class="property-list">
+                    <div class="head">Your Properties</div>
+                    <ul class="property-lists">
+                        <li class="list">Property 1</li>
+                        <li class="list">Property 2</li>
+                        <li class="list">Property 3</li>
+                    </ul>
+                </div>
+            </section>
+            <form action="" class="main-form">
+                <div class="name inp">
                     <label for="nm">Your Name :</label>
                     <input type="text" name="" id="nm">
                 </div>
-                <div class="email">
-                    <label for="email"></label>
+                <div class="email inp">
+                    <label for="email">Your email</label>
                     <input type="email" name="" id="email">
                 </div>
-                <div class="address">
+                <div class="address inp">
                     <label for="add">Property Location</label>
                     <input type="text" name="" id="add">
                 </div>
-                <div class="type">
+                <div class="type inp">
                     <label for="type">Property Type</label>
-                    <input type="text" name="" id="type">
+                    <select name="" id="" class="select">
+                        <option value="">Land</option>
+                        <option value="">House</option>
+                        <option value="">Flat</option>
+                        <option value="">Shop</option>
+                        <option value="">Other</option>
+                    </select>
                 </div>
-                <div class="file">
-                    <label for="file"></label>
+                <div class="file inp">
+                    <label for="file">Upload image</label>
                     <input type="file" name="" id="file">
                 </div>
-                <div class="desc">
-                    <label for="desc"></label>
+                <div class="desc inp">
+                    <label for="desc">Description</label>
                     <input type="text" name="" id="desc">
                 </div>
-                <div class="id">
+                <div class="id inp">
                     <label for="id">ID :</label>
                     <input type="text" name="" id="id">
+                </div>
+                <div class="add-btn inp">
+                    <input type="submit" name="" id="" value="submit" class="btn">
                 </div>
             </form>
         </div>
